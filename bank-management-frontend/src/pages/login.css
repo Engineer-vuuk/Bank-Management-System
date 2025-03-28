@@ -1,0 +1,93 @@
+/* Centered Login Box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* Soft blue gradient */
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Headings */
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #2d5faa; /* Deep Blue */
+}
+
+/* Form Inputs */
+.login-box label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin: 10px 0 5px;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bfc9da;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.login-box input:focus {
+    border-color: #2d5faa;
+    box-shadow: 0 0 5px rgba(45, 95, 170, 0.5);
+}
+
+/* Forgot Password */
+.forgot-password {
+    text-align: right;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.forgot-password span {
+    color: #2d5faa;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.forgot-password span:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-box button {
+    background: #2d5faa;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+.login-box button:hover {
+    background: #1e4a85;
+}
+
+/* Error Message */
+.message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
