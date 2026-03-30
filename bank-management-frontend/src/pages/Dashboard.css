@@ -1,0 +1,192 @@
+/* Base styles for full screen and clean layout */
+html, body {
+  margin: 120;
+  padding: 20;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.dashboard-container {
+  display: absolute;
+  place-items: center; /* Center content */
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.username {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.balance {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.profile-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.dropdown-menu button {
+  display: block;
+  padding: 10px 20px;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f0f0f0;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  background-color: #4CAF50; /* Original color */
+  color: Blue;
+  font-weight: bold;
+  border: 2px solid #4CAF50; /* Initial border color */
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #45a049;
+}
+
+.action-btn.active {
+  background-color: #FF8C00; /* Orange when active */
+  border-color: #FF8C00; /* Highlight the border with orange when active */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.action-btn:active {
+  background-color: #8B4513; /* Brown when clicked */
+  border-color: #8B4513; /* Highlight the border with brown when clicked */
+}
+
+.transaction-form {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.transaction-form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+}
+
+.transaction-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2196F3;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.message {
+  text-align: center;
+  margin-top: 10px;
+  color: green;
+}
+
+.recent-activity {
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.recent-activity table {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activity th,
+.recent-activity td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.recent-activity th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.recent-activity tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.logout-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.logout-button {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
